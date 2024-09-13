@@ -1,0 +1,25 @@
+.profile {
+    grid-column: span 2;
+    grid-row: span 2;
+    align-items: flex-start !important;
+    padding: 20px;
+    animation-delay: 0.1s !important;
+  
+    img {
+      width: 80px;
+      height: 80px;
+      border-radius: 50%;
+      margin-bottom: 10px;
+    }
+  
+    h2, p {
+      margin: 5px 0;
+    }
+  
+    @media (max-width: 768px) {
+      grid-column: span 1 !important;
+      grid-row: auto !important;
+      text-align: center;
+      align-items: center;
+    }
+  }

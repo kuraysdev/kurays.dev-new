@@ -1,0 +1,26 @@
+.finance-card {
+    padding: 16px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease-in-out;
+}
+
+.finance-card h3 {
+    margin-bottom: 8px;
+}
+
+.finance-card .added-amount {
+    color: green;
+    font-weight: bold;
+    opacity: 0;
+    animation: fade-in 1s ease-in-out forwards;
+}
+
+@keyframes fade-in {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}

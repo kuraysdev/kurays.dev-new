@@ -1,0 +1,11 @@
+.weather {
+    grid-column: span 2;
+    text-align: left;
+    padding: 15px;
+    animation-delay: 0.9s !important;
+  
+    h3, p {
+      margin: 5px 0;
+    }
+  }
+  

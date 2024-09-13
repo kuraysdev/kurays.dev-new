@@ -1,0 +1,13 @@
+.quote {
+    grid-column: span 2;
+    grid-row: span 2;
+    font-style: italic;
+    text-align: left;
+    padding: 20px;
+    animation-delay: 0.8s !important;
+  
+    p:last-child {
+      text-align: right;
+      margin-top: 10px;
+    }
+}

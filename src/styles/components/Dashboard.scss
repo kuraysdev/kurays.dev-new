@@ -1,0 +1,14 @@
+.dashboard {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+    max-width: 600px;
+    background-color: #1a1a1a;
+    padding: 15px;
+    border-radius: 20px;
+  
+    @media (max-width: 768px) {
+      grid-template-columns: 1fr;
+      width: 90%;
+    }
+  }

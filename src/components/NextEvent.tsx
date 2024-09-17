@@ -13,11 +13,12 @@ const NextEvent: React.FC = () => {
 
       let hoursLeft: number;
       let minutesLeft: number;
+      console.log(currentHour+":"+currentMinute)
 
       if (currentHour >= 7 && currentHour < 24) {
         // Время между 7:00 и 24:00
         setEventType('sleep');
-        hoursLeft = 23 - currentHour;
+        hoursLeft = 22 - currentHour;
         minutesLeft = 60 - currentMinute;
         if (minutesLeft > 0) {
           hoursLeft += 1;
@@ -26,7 +27,7 @@ const NextEvent: React.FC = () => {
         // Время между 0:00 и 7:00
         setEventType('wake');
         if (currentHour < 7) {
-          hoursLeft = 6 - currentHour;
+          hoursLeft = 7 - currentHour;
           minutesLeft = 60 - currentMinute;
           if (minutesLeft > 0) {
             hoursLeft += 1;

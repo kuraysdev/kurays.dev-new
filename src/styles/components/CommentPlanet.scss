@@ -1,0 +1,53 @@
+.planet {
+    grid-column: span 4;
+    grid-row: span 4;
+}
+
+.planet::after {
+  position: absolute;
+  top: 0;
+  left: 0;
+  color: red;
+  padding: 0 10px;
+  content: "work in progress";
+}
+
+
+.comment {
+    width: 180px;
+    background: #0f0f0f;
+    border-radius: 5px;
+    padding: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 6px;
+    transition: all 0.3s;
+    user-select: none;
+  }
+
+  .userinfo {
+    display: flex;
+    flex-direction: row;
+
+    .avatar {
+      width: 20px;
+      height: 20px;
+      border-radius: 50%;
+    }
+    
+    .h3 {
+      margin: 2px 0;
+      font-size: 8px;
+    }
+  }
+  
+  .comment.selected {
+    z-index: 1;
+  }
+  
+  .comment p {
+    font-size: 4em;
+    text-align: center;
+  }

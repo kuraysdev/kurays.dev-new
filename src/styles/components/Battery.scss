@@ -1,0 +1,34 @@
+.battery {
+    grid-column: span 1;
+    font-size: 28px !important;
+    font-weight: bold;
+    animation-delay: 0.4s !important; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .battery-icon {
+        border: 1px solid;
+        border-radius: 8px;
+        width: 100px;
+        height: 40px;
+
+        .energy {
+            background-color: green;
+            width: 87%;
+            height: 100%;
+            border-radius: 8px;
+        }
+    }
+
+    .battery-icon::after {
+        height: 21px;
+        width: 3px;
+        background: #fff;
+        content: "";
+        position: absolute;
+        right: 19px;
+        bottom: 26px;
+        border-radius: 5px;
+    }
+}

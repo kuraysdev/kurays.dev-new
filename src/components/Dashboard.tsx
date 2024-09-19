@@ -11,6 +11,7 @@ import { FiPhone, FiVolume2, FiZap, FiSun } from 'react-icons/fi';
 import '../styles/components/Dashboard.scss';
 import Schedule from './Schedule';
 import PlanetCardsComponent from './CommentPlanet';
+import Battery from './Battery';
 
 const Dashboard: React.FC = () => {
   return (
@@ -22,6 +23,7 @@ const Dashboard: React.FC = () => {
       <IconCard icon={<FiSun />} /> */}
       <MusicPlayer />
       <TimeDisplay />
+      <Battery />
       <Quote />
       <Weather />
       <NextEvent />

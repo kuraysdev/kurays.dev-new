@@ -19,16 +19,22 @@ const config = {
 };
 
 if (dev) {
-  // Запуск сервера разработки
-  esbuild.serve({
-    servedir: 'public',
-    port: 3000
-  }, config).then(server => {
-    console.log('Development server running on http://localhost:3000');
-  }).catch(() => process.exit(1));
+  serve();
 } else {
-  // Сборка для продакшена
   esbuild.build(config).then(() => {
     console.log('Build complete');
   }).catch(() => process.exit(1));
+}
+
+
+async function serve() {
+  let ctx = await esbuild.context(config);
+  
+  await ctx.watch()
+
+  let { host, port } = await ctx.serve({
+    servedir: 'public',
+    port: 3000
+  })
+  console.log('Development server running on http://localhost:3000');
 }

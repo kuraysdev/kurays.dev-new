@@ -9,26 +9,46 @@
 
     .battery-icon {
         border: 1px solid;
+        position: relative;
         border-radius: 8px;
+        border: 0px;
         width: 100px;
         height: 40px;
 
         .energy {
             background-color: green;
-            width: 87%;
+            /* width: 87%; */
             height: 100%;
-            border-radius: 8px;
+            border-radius: 4px;
+        }
+
+        svg {
+            position: absolute;
+            top: 5px;
+            left: 36px;
         }
     }
 
     .battery-icon::after {
+        content: "";
+        display: block;
+        position: absolute;
+        top: -4px;
+        left: -4px;
+        right: -4px;
+        bottom: -4px;
+        border: 1px solid #fff;
+        border-radius: 8px;
+    }
+
+    .battery-icon::before {
         height: 21px;
-        width: 3px;
+        width: 4px;
         background: #fff;
         content: "";
         position: absolute;
-        right: 19px;
-        bottom: 26px;
-        border-radius: 5px;
+        right: -7px;
+        bottom: 10px;
+        border-radius: 0 4px 4px 0;
     }
 }

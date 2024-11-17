@@ -3,6 +3,14 @@
     text-align: left;
     padding: 15px;
     animation-delay: 0.9s !important;
+    &::after {
+      position: absolute;
+      top: 0;
+      left: 0;
+      color: red;
+      padding: 0 10px;
+      content: "work in progress";
+    }
   
     h3, p {
       margin: 5px 0;

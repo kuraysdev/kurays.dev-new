@@ -2,6 +2,14 @@
     grid-column: span 2;
     text-align: left;
     animation-delay: 1s !important;
+    &::after {
+      position: absolute;
+      top: 0;
+      left: 0;
+      color: red;
+      padding: 0 10px;
+      content: "work in progress";
+    }
   
     h3 {
       margin-bottom: 10px;

@@ -5,6 +5,14 @@
     text-align: left;
     padding: 20px;
     animation-delay: 0.8s !important;
+    &::after {
+      position: absolute;
+      top: 0;
+      left: 0;
+      color: red;
+      padding: 0 10px;
+      content: "work in progress";
+    }
   
     p:last-child {
       text-align: right;
